@@ -1,48 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shane O'Dell - Personal Website">
-    <title>Shane O'Dell</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Personal site for Shane O'Dell — Software Engineer." />
+  <title>Shane O'Dell — Software Engineer</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shane O'Dell — Software Engineer" />
+  <meta property="og:description" content="Software Engineer. Building reliable systems with a focus on clarity, performance, and maintainability." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h1>Shane O'Dell</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <main class="wrap">
+    <header class="top">
+      <a class="skip" href="#content">Skip to content</a>
+
+      <h1 class="name">Shane O&#39;Dell</h1>
+      <p class="role">Software Engineer</p>
+
+      <p class="lede" id="content">
+        I build reliable backend systems and cloud services, with a bias toward
+        clarity, performance, and maintainability.
+      </p>
+
+      <nav class="links" aria-label="Primary links">
+        <a href="https://github.com/odellsha" rel="me">GitHub</a>
+        <a href="https://www.linkedin.com/in/shaneodell" rel="me">LinkedIn</a>
+        <a href="mailto:shane@shaneodell.com">Email</a>
+      </nav>
     </header>
 
-    <main>
-        <section id="hero">
-            <h2>Welcome</h2>
-            <p>This is my personal website.</p>
-        </section>
+    <section class="section">
+      <h2>Focus</h2>
+      <ul>
+        <li>Backend engineering (.NET services, APIs, integrations)</li>
+        <li>Cloud architecture and operations (Azure, CI/CD, observability)</li>
+        <li>Data processing pipelines and pragmatic system design</li>
+      </ul>
+    </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>Add your bio and information here.</p>
-        </section>
+    <section class="section">
+      <h2>Highlights</h2>
+      <ul>
+        <li>Modernization work on production systems (performance, reliability, maintainability)</li>
+        <li>Shipping tooling and patterns that make teams faster (templates, pipelines, reusable components)</li>
+        <li>Strong preference for boring, proven solutions unless complexity is justified</li>
+      </ul>
+      <p class="note">
+        More detailed write-ups and project links can be added here over time.
+      </p>
+    </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Showcase your projects here.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with me.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Shane O'Dell. All rights reserved.</p>
+    <footer class="footer">
+      <p>
+        <span class="muted">Last updated:</span>
+        <time datetime="2025-12-29">Dec 29, 2025</time>
+      </p>
     </footer>
+  </main>
 </body>
 </html>
