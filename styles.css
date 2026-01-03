@@ -25,6 +25,18 @@ body{
   color:var(--text);
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
   line-height:1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 .wrap{
@@ -82,7 +94,14 @@ a{
   text-decoration: none;
   text-underline-offset: 3px;
 }
-a:hover{ text-decoration: underline; }
+a:hover, a:focus{ 
+  text-decoration: underline;
+  outline-offset: 2px;
+}
+a:focus-visible{
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
 
 .section{
   padding-top: 22px;

@@ -22,12 +22,12 @@
 	</head>
 
 	<body>
-		<main class="wrap">
-			<header class="top">
-				<a class="skip" href="#content">Skip to content</a>
-
+		<a class="skip" href="#content">Skip to content</a>
+		
+		<main class="wrap" id="main" role="main">
+			<header class="top" role="banner">
 				<h1 class="name">Shane O&#39;Dell</h1>
-				<p class="role">Software Engineer</p>
+				<p class="role" aria-label="Professional title">Software Engineer</p>
 
 				<p class="lede" id="content">
 					I build reliable backend systems and cloud services, with a bias
@@ -35,14 +35,14 @@
 				</p>
 
 				<nav class="links" aria-label="Primary links">
-					<a href="https://github.com/odellsha" rel="me">GitHub</a>
-					<a href="https://www.linkedin.com/in/shaneodell" rel="me">LinkedIn</a>
-					<a href="mailto:shane@shaneodell.com">Email</a>
+					<a href="https://github.com/odellsha" rel="me noopener noreferrer" target="_blank" aria-label="GitHub profile (opens in new tab)">GitHub</a>
+					<a href="https://www.linkedin.com/in/shaneodell" rel="me noopener noreferrer" target="_blank" aria-label="LinkedIn profile (opens in new tab)">LinkedIn</a>
+					<a href="mailto:shane@shaneodell.com" aria-label="Send email">Email</a>
 				</nav>
 			</header>
 
-			<section class="section">
-				<h2>Focus</h2>
+			<section class="section" aria-labelledby="focus-heading">
+				<h2 id="focus-heading">Focus</h2>
 				<ul>
 					<li>Backend engineering (.NET services, APIs, integrations)</li>
 					<li>
@@ -52,8 +52,8 @@
 				</ul>
 			</section>
 
-			<section class="section">
-				<h2>Highlights</h2>
+			<section class="section" aria-labelledby="highlights-heading">
+				<h2 id="highlights-heading">Highlights</h2>
 				<ul>
 					<li>
 						Modernization work on production systems (performance, reliability,
@@ -70,10 +70,10 @@
 				</ul>
 			</section>
 
-			<footer class="footer">
+			<footer class="footer" role="contentinfo">
 				<p>
-					<span class="muted">Last updated:</span>
-					<time datetime="2025-12-29">Dec 29, 2025</time>
+					<span class="muted" aria-hidden="true">Last updated:</span>
+					<time datetime="2025-12-29" aria-label="Last updated December 29, 2025">Dec 29, 2025</time>
 				</p>
 			</footer>
 		</main>
